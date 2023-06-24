@@ -32,9 +32,20 @@ In the first place, the basic structure of the code was planned by means of a ps
 
 flowchart TD
 
-    A[Begin.] -->B(Print: Welcome to the hangman game.) -->C(Show user the game levels.)
-    --> D("Level 1: Easy.
+    A[Begin.] -->B(Print: Welcome to the hangman game.) -->C(Show game levels.)
+    --> D("`Level 1: Easy.
     Level 2: Intermediate.
-    Level 3: Hard.")
+    Level 3: Hard.`")
+    --> E(Allow users to choose a level.)
+    E --> F(Level: Easy.) --> I(" X attempts
+    a-b letters in the word.
+    ") -->L
+    E --> G(Level: Intermediate.) --> J(" X attempts
+    a-b letters in the word.
+    ") -->L
+    E --> H(Level: Hard.) --> K(" X attempts
+    a-b letters in the word.
+    ")
+    --> L(Generate a random word using a python library.)
 
 ```
