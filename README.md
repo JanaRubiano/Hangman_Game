@@ -86,7 +86,7 @@ def clr():
 Although the expression for clearing the screen is fairly short, it is used several times in the code, for that reason we defined an even shorter expression. 
 
 
-The** level()** function allows the user to choose a level and bassed on the choice, selects a word.
+The ** level()** function allows the user to choose a level and bassed on the choice, selects a word.
 
 ```python
 from  wonderwords import RandomWord
