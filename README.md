@@ -74,7 +74,58 @@ flowchart TD
    
 ```
 ---
-Secondly, we will begin to explain the operation of each function of the code.
+Secondly, we will explain the operation of each function of the code.
+
+The** clr()** function clears the screen using the os method **.system()**.
+
+```python
+import os
+def clr():
+    return os.system('cls')
+```
+Although the expression for clearing the screen is fairly short, it is used several times in the code, for that reason we defined an even shorter expression. 
+
+
+The** level()** function allows the user to choose a level and bassed on the choice, selects a word.
+
+```python
+from  wonderwords import RandomWord
+def level() -> str:
+    r = RandomWord()
+
+    choice = None
+    while choice not in [1, 2, 3]:
+        choice = int(input("1, 2 or 3"))
+        clr()
+    match choice:
+        case 1:
+            info = [r.word(word_min_length=8, word_max_length=19), 1]
+        case 2:
+            info = [r.word(word_min_length=5, word_max_length=8), 2]
+        case 3:
+            info = [r.word(word_max_length=5), 3]
+
+    return info
+```
+In order to establish the difficulty level we tried different combinations of wordlenghts and number of tries. We end up with the easy level being a long word (case 1) with 11 tries. In the above code, case 1 is a word that has between 8 and 19 letters. The number of tries is defined by how many pictures the hangman drawing has. 
+For generating the words we used a library called [**wonderwords**](http://https://pypi.org/project/wonderwords/ "**wonderwords**"). From that library we imported the **RandomWord** class and when generating a word we call the **word** method.
+
+We also wrote a function **color()** for coloring the three different hangman motives. 
+```python
+def color(num:int, picture:str):
+    choice = num
+    match choice:
+        case 1:
+            c = "\033[96m{}\033[0m".format(picture)
+            return c
+        case 2:
+            c = "\033[93m{}\033[0m".format(picture)
+            return c
+        case 3:
+            c = "\033[35m{}\033[0m".format(picture)
+            return c
+```
+For assigning a color to the text in the python console, we used the [ANSI escape codes](htthttps://en.wikipedia.org/wiki/ANSI_escape_code#cite_note-CruzGianone1997-31p:// "ANSI escpare codes").
 
 To enable the functionality of the game code, three main libraries were imported.
 
