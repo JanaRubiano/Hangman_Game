@@ -46,9 +46,10 @@ flowchart TD
     E --> H(Level: Hard.) --> K(" •  X attempts
    •  9 ↔ 19 letters in the word.
     ") 
-    --> L(Generate a random word using a python library related to game difficulty) 
-    --> N(Print hangman design related to game difficulty)
-    --> Q(Print underscores with the random word length)
+    --> L(" •  Generate a random word using a python library related to game difficulty
+     •  Print hangman design related to game difficulty
+     •  Print underscores with the random word length
+    ") 
     --> W(Allow the user to enter a letter.)
     --> R{Does the entered letter belong to the generated word?}
     R -->n(No) --> q("• Add word to list. 
