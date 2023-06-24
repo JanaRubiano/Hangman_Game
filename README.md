@@ -18,9 +18,19 @@ First of all, we will present the index of what you can find in this repository.
 * Explanation of the development of the hangman game code.
 * Steps to install the game.
 * How to use the code.
+* References. 
 
 ---
 
-##  _Explanation of the development of the hangman game code._
+##  _Explanation of the development of the hangman game code._  :woman_technologist::woman_technologist::man_technologist:
 
+In the first place, the basic structure of the code was planned by means of a pseudocode. 
 
+ `Pseudocode of the basic code structure. `
+
+```mermaid
+
+flowchart TD
+A[Begin.] -->B(Print: Welcome to the hangman game.) -->C(Show the options)
+
+```
