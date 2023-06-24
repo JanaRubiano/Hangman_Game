@@ -16,6 +16,8 @@ First of all, we will present the index of what you can find in this repository.
 
 **Index:**
 * Explanation of the development of the hangman game code.
+   * Pseudocode of the basic code structure.
+   * Each function explanation. 
 * Steps to install the game.
 * How to use the code.
 * References. 
