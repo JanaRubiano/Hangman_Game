@@ -66,10 +66,12 @@ flowchart TD
     • Print back underscores with the letter.
     • Compare list with the string of the generated word
     ") -->U{Is the word completed?} 
-    U -->O(Yes) --> P(Ask the user if he/she wants to play again)
+    U -->O(Yes) --> k(Print: Congratulations)
+    --> P(Ask the user if he/she wants to play again)
     P --> b(No) --> w[End]
     P--> a(Yes) -->C
     U --> i(No) -->W
+   
 ```
 ---
 Secondly, we will begin to explain the operation of each function of the code.
@@ -81,3 +83,10 @@ Secondly, we will begin to explain the operation of each function of the code.
 ```
 
 ---
+##  _Steps to install the game._ :open_file_folder::memo:
+
+---
+##  _How to use the code._ :tada:
+
+---
+##  _References._ :mag_right:
