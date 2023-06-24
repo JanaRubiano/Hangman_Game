@@ -46,25 +46,25 @@ flowchart TD
     E --> H(Level: Hard.) --> K(" •  X attempts
    •  9 ↔ 19 letters in the word.
     ") 
-    --> L(" •  Generate a random word using a python library related to game difficulty
-     •  Print hangman design related to game difficulty
-     •  Print underscores with the random word length
+    --> L(" • Generate a random word using a Python library that corresponds to the game difficulty.
+     •  Print a hangman design corresponding to the game difficulty.
+     •  Print underscores representing the length of the random word.
     ") 
     --> W(Allow the user to enter a letter.)
     --> R{Does the entered letter belong to the generated word?}
-    R -->n(No) --> q("• Add word to list. 
+    R -->n(No) --> q("• Add the word to the list.
     • Print part of the hangman design.
-    • Print failed letters. 
-    • Lost attempt
+    • Print the failed letters.
+    • Indicate a lost attempt.
     ") -->u{Has the user lost all its attempts?}
     u -->o(Yes) -->S("Game over. 
     Show the correct word. 
     ") --> P
     u--> t(No) --> W
     
-    R -->Y(Yes) --> T(" • Add word to list. 
-    • Print back underscores with the letter.
-    • Compare list with the string of the generated word
+    R -->Y(Yes) --> T(" • Add the word to the list.
+    • Print the updated underscores with the letter.
+    • Compare the list with the string of the generated word.
     ") -->U{Is the word completed?} 
     U -->O(Yes) --> k(Print: Congratulations)
     --> P(Ask the user if he/she wants to play again)
@@ -76,10 +76,18 @@ flowchart TD
 ---
 Secondly, we will begin to explain the operation of each function of the code.
 
- `Function name `
+To enable the functionality of the game code, three main libraries were imported.
+
+1. **Time:** This library is used to manage a timer in the code. It allows for the creation of a countdown that controls the user's playing time.
+2. **RandomWord:** This library can be installed using the command prompt (cmd) and enables the generation of random words with varying lengths and categories.
+3. **Os:** This library allows access to the operating system, enabling interaction with various system functionalities.
+
+ `libraries`
  
 ```Python
-# La función va acá. 
+from  wonderwords import RandomWord
+import time
+import os
 ```
 
 ---
