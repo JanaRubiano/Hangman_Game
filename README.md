@@ -107,7 +107,7 @@ def level() -> str:
 
     return info
 ```
-In order to establish the difficulty level we tried different combinations of wordlenghts and number of tries. We end up with the easy level being a long word (case 1) with 11 tries. In the above code, case 1 is a word that has between 8 and 19 letters. The number of tries is defined by how many pictures the hangman drawing has. 
+In order to establish the difficulty level we tried different combinations of wordlenghts and number of tries. We end up with the easy level being a long word (case 1) with 11 tries and the hard level (case 3), a word of less than 5 letters and only 5 attempts. In the above code, case 1 is a word that has between 8 and 19 letters. The number of tries is defined by how many pictures the hangman drawing has. 
 For generating the words we used a library called [**wonderwords**](http://https://pypi.org/project/wonderwords/ "**wonderwords**"). From that library we imported the **RandomWord** class and when generating a word we call the **word** method.
 
 We also wrote a function **color()** for coloring the three different hangman motives. 
@@ -125,7 +125,7 @@ def color(num:int, picture:str):
             c = "\033[35m{}\033[0m".format(picture)
             return c
 ```
-For assigning a color to the text in the python console, we used the [ANSI](https://en.wikipedia.org/wiki/ANSI_escape_code#cite_note-CruzGianone1997-31:// "ANSI") escape codes.
+For assigning a color to the text in the python console we used the [ANSI](https://en.wikipedia.org/wiki/ANSI_escape_code#cite_note-CruzGianone1997-31:// "ANSI") escape codes.
 
 
 To enable the functionality of the game code, three main libraries were imported.
