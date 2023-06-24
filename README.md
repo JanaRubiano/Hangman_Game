@@ -32,7 +32,7 @@ In the first place, the basic structure of the code was planned by means of a ps
 
 ```mermaid
 flowchart TD
-    A[Begin.] -->B(Print: Welcome to the hangman game.) -->C(Show game levels.)
+    A[Start.] -->B(Print: Welcome to the hangman game.) -->C(Show game levels.)
     --> D("Level 1: Easy.
     Level 2: Intermediate.
     Level 3: Hard.")
