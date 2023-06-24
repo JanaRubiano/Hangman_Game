@@ -29,9 +29,7 @@ In the first place, the basic structure of the code was planned by means of a ps
  `Pseudocode of the basic code structure. `
 
 ```mermaid
-
 flowchart TD
-
     A[Begin.] -->B(Print: Welcome to the hangman game.) -->C(Show game levels.)
     --> D("Level 1: Easy.
     Level 2: Intermediate.
@@ -62,7 +60,6 @@ flowchart TD
     ") --> P
     u--> t(No) --> W
     
-
     R -->Y(Yes) --> T(" • Add word to list. 
     • Print back underscores with the letter.
     • Compare list with the string of the generated word
@@ -71,6 +68,14 @@ flowchart TD
     P --> b(No) --> w[End]
     P--> a(Yes) -->C
     U --> i(No) -->W
-   
-
 ```
+---
+Secondly, we will begin to explain the operation of each function of the code.
+
+ `Function name `
+ 
+```Python
+# La función va acá. 
+```
+
+---
