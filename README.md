@@ -125,7 +125,7 @@ def color(num:int, picture:str):
             c = "\033[35m{}\033[0m".format(picture)
             return c
 ```
-For assigning a color to the text in the python console, we used the [ANSI escape codes](htthttps://en.wikipedia.org/wiki/ANSI_escape_code#cite_note-CruzGianone1997-31p:// "ANSI escpare codes").
+For assigning a color to the text in the python console, we used the [ANSI escape codes](htthttps://en.wikipedia.org/wiki/ANSI_escape_code#cite_note-CruzGianone1997-31p:// "ANSI escape codes").
 
 To enable the functionality of the game code, three main libraries were imported.
 
