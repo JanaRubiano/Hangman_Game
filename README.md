@@ -6,7 +6,6 @@
   <img src="https://user-images.githubusercontent.com/124607045/236589667-741812cd-a5f3-4fd6-b797-b63bd8582732.png" alt="Sublime's custom image"/>
 </p>
 
-
 * **Team members:**  Jana Rubiano Hurtado, Samuel Villamizar & Ana Maria De Felipe Briñez.
 
 ---
@@ -21,3 +20,7 @@ First of all, we will present the index of what you can find in this repository.
 * How to use the code.
 
 ---
+
+##  _Explanation of the development of the hangman game code._
+
+
