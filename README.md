@@ -44,9 +44,9 @@ flowchart TD
     • 6 ↔ 8 letters in the word.
     ") -->L
     E --> H(Level: Hard.) --> K(" •  X attempts
-   •  9 ↔ 19 letters in the word.
+    •  9 ↔ 19 letters in the word.
     ") 
-    --> L(" • Generate a random word using a Python library that corresponds to the game difficulty.
+    --> L(" • Generate a random word that corresponds to the game difficulty.
      •  Print a hangman design corresponding to the game difficulty.
      •  Print underscores representing the length of the random word.
     ") 
@@ -89,6 +89,17 @@ from  wonderwords import RandomWord
 import time
 import os
 ```
+
+Once the libraries were imported, the different functions that allowed the correct operation of the code were developed.
+
+ `Function to clear the console screen.`
+ 
+ 
+```Python
+def clr():
+    return os.system('cls')
+```
+
 
 ---
 ##  _Steps to install the game._ :open_file_folder::memo:
