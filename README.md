@@ -33,19 +33,27 @@ In the first place, the basic structure of the code was planned by means of a ps
 flowchart TD
 
     A[Begin.] -->B(Print: Welcome to the hangman game.) -->C(Show game levels.)
-    --> D("`Level 1: Easy.
+    --> D("Level 1: Easy.
     Level 2: Intermediate.
-    Level 3: Hard.`")
-    --> E(Allow users to choose a level.)
-    E --> F(Level: Easy.) --> I(" X attempts
-    a-b letters in the word.
+    Level 3: Hard.")
+    --> E(Allow the user to choose a level.)
+    E --> F(Level: Easy.) --> I(" • X attempts
+    • 2 ↔ 5 letters in the word.
     ") -->L
-    E --> G(Level: Intermediate.) --> J(" X attempts
-    a-b letters in the word.
+    E --> G(Level: Intermediate.) --> J(" •  X attempts
+    • 6 ↔ 8 letters in the word.
     ") -->L
-    E --> H(Level: Hard.) --> K(" X attempts
-    a-b letters in the word.
-    ")
-    --> L(Generate a random word using a python library.)
+    E --> H(Level: Hard.) --> K(" •  X attempts
+   •  9 ↔ 19 letters in the word.
+    ") 
+    --> L(Generate a random word using a python library related to game difficulty) 
+    --> N(Print hangman design related to game difficulty)
+    --> Q(Print underscores with the random word length)
+    --> W(Allow the user to enter a letter.)
+    --> R{Does the entered letter belong to the generated word?}
+    R -->Y(Yes) --> T(" • Add word to list. 
+    • Print back underscores with the letter.
+    • Compare list with the string of the generated word
+    ") -->U{...}
 
 ```
