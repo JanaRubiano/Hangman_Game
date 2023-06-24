@@ -51,9 +51,25 @@ flowchart TD
     --> Q(Print underscores with the random word length)
     --> W(Allow the user to enter a letter.)
     --> R{Does the entered letter belong to the generated word?}
+    R -->n(No) --> q("• Add word to list. 
+    • Print part of the hangman design.
+    • Print failed letters. 
+    • Lost attempt
+    ") -->u{Has the user lost all its attempts?}
+    u -->o(Yes) -->S("Game over. 
+    Show the correct word. 
+    ") --> P
+    u--> t(No) --> W
+    
+
     R -->Y(Yes) --> T(" • Add word to list. 
     • Print back underscores with the letter.
     • Compare list with the string of the generated word
-    ") -->U{...}
+    ") -->U{Is the word completed?} 
+    U -->O(Yes) --> P(Ask the user if he/she wants to play again)
+    P --> b(No) --> w[End]
+    P--> a(Yes) -->C
+    U --> i(No) -->W
+   
 
 ```
