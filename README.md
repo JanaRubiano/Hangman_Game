@@ -179,9 +179,9 @@ In this section we will explain the content and function of each file.
 * There are two options for the drawings. You can either download the **_'drawings.json'_** file or use the **_'text_to_json.py'_** script. The first file contains the drawings in an unreadable format but allows you to play the game immediately. The second option provides the drawings in their original design, but you need to run the 'text_to_json.py' script before executing 'hangman.py'. By running 'text_to_json.py', you will create the 'drawings.json' file, and everything will be ready to start playing.
 
 <p align="center"> 
-  <img src="https://i.postimg.cc/nhMwsh2D/Imagen1.jpg" alt="Sublime's custom image"/>
-  <img src="https://i.postimg.cc/6Q8Tqgy0/Imagen3.jpg"/>
-  <img src="https://i.postimg.cc/hv1tNq5S/Imagen2.jpg"/>
+  <img src="https://i.postimg.cc/sxXLCYnv/Screenshot-2023-06-25-182801.png" alt="Sublime's custom image"/>
+  <img src="https://i.postimg.cc/jdn86dB0/Screenshot-2023-06-25-182846.png" alt="Sublime's custom image" />
+  <img src="https://i.postimg.cc/GthWhwp3/Screenshot-2023-06-25-182557.png" alt="Sublime's custom image"/>
 </p>
   
 * In **_requirements.txt_** you will find the libraries that you need to install in order to run the code, in this case the only library is wonderwords. 
