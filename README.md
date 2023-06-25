@@ -41,27 +41,31 @@ flowchart TD
     --> D("Level 1: Easy.
     Level 2: Intermediate.
     Level 3: Hard.")
-    --> E("Allow the user (or users) to choose a level.")
-    E --> F(Level: Easy.) --> I(" • X attempts
-    • 2 ↔ 5 letters in the word.
+    --> E("Allow the user (or users) to choose a level.
+    ")
+    E --> F(Level: Easy.) --> I(" • 11 attempts
+    • 8-12 letters in the word.
     ") -->L
-    E --> G(Level: Intermediate.) --> J(" •  X attempts
-    • 6 ↔ 8 letters in the word.
+    E --> G(Level: Intermediate.) --> J(" •  10 attempts
+    • 5-8 letters in the word.
     ") -->L
-    E --> H(Level: Hard.) --> K(" •  X attempts
-    •  9 ↔ 19 letters in the word.
+    E --> H(Level: Hard.) --> K(" •  5 attempts
+    •  5 > letters in the word.
     ") 
     --> L(" • Generate a random word that corresponds to the game difficulty.
      •  Print a hangman design corresponding to the game difficulty.
      •  Print underscores representing the length of the random word.
     ") 
-    --> W(Allow the user to enter a letter.)
+    --> W("Allow the user to enter a letter.
+    (If the game is in pairs mode, the users will be taking turns.)
+    ")
     --> R{Does the entered letter belong to the generated word?}
     R -->n(No) --> q("• Add the word to the list.
     • Print part of the hangman design.
     • Print the failed letters.
     • Indicate a lost attempt.
-    ") -->u{Has the user lost all its attempts?}
+    ") -->u{"Have the user (or users) lost all their attempts?
+    "}
     u -->o(Yes) -->S("Game over. 
     Show the correct word. 
     ") --> P
@@ -70,9 +74,12 @@ flowchart TD
     R -->Y(Yes) --> T(" • Add the word to the list.
     • Print the updated underscores with the letter.
     • Compare the list with the string of the generated word.
+    • (If the game is in pairs mode, a point will be added to the scoreboard)
     ") -->U{Is the word completed?} 
-    U -->O(Yes) --> k(Print: You won)
-    --> P(Ask the user if he/she wants to play again)
+    U -->O(Yes) --> k("Print: You won
+    (If the game is in pairs mode, the scores will be displayed)
+    ")
+    --> P(Ask the user or users if they want to play again)
     P --> b(No) --> w[End]
     P--> a(Yes) -->C
     U --> i(No) -->W
