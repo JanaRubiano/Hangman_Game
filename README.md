@@ -2,9 +2,10 @@
 
 ### _Done by:  The Bug Hunting Pythons._  :bug:🦗:bug:
 
-<p align="center">
-  <img src="https://i.postimg.cc/TwsP2PbN/Whats-App-Image-2023-06-24-at-6-12-59-PM.jpg" alt="Sublime's custom image"/>
+<p align="center"> 
+  <img width="230" height="230" src="https://i.postimg.cc/TwsP2PbN/Whats-App-Image-2023-06-24-at-6-12-59-PM.jpg" alt="Sublime's custom image"/>
 </p>
+
 
 * **Team members:**  Jana Rubiano Hurtado, Samuel Villamizar & Ana Maria De Felipe Briñez.
 
@@ -32,11 +33,15 @@ In the first place, the basic structure of the code was planned by means of a ps
 
 ```mermaid
 flowchart TD
-    A[Start.] -->B(Print: Welcome to the hangman game.) -->C(Show game levels.)
+    A[Start.] -->B(Print: Welcome to the hangman game.) 
+    -->y(Ask the user if he/she is going to play alone or in pairs)
+    y -->e(Yes) --> C
+    y --> r(No)
+    -->C(Show game levels.)
     --> D("Level 1: Easy.
     Level 2: Intermediate.
     Level 3: Hard.")
-    --> E(Allow the user to choose a level.)
+    --> E("Allow the user (or users) to choose a level.")
     E --> F(Level: Easy.) --> I(" • X attempts
     • 2 ↔ 5 letters in the word.
     ") -->L
@@ -66,7 +71,7 @@ flowchart TD
     • Print the updated underscores with the letter.
     • Compare the list with the string of the generated word.
     ") -->U{Is the word completed?} 
-    U -->O(Yes) --> k(Print: Congratulations)
+    U -->O(Yes) --> k(Print: You won)
     --> P(Ask the user if he/she wants to play again)
     P --> b(No) --> w[End]
     P--> a(Yes) -->C
@@ -76,7 +81,7 @@ flowchart TD
 ---
 Secondly, we will explain the operation of each function of the code.
 
-The** clr()** function clears the screen using the os method **.system()**.
+`The "clr()" function clears the screen using the os method ".system()".`
 
 ```python
 import os
@@ -86,7 +91,7 @@ def clr():
 Although the expression for clearing the screen is fairly short, it is used several times in the code, for that reason we defined an even shorter expression. 
 
 
-The ** level()** function allows the user to choose a level and bassed on the choice, selects a word.
+`The "level()" function allows the user to choose a level and bassed on the choice, selects a word.`
 
 ```python
 from  wonderwords import RandomWord
@@ -110,7 +115,8 @@ def level() -> str:
 In order to establish the difficulty level we tried different combinations of wordlenghts and number of tries. We end up with the easy level being a long word (case 1) with 11 tries and the hard level (case 3), a word of less than 5 letters and only 5 attempts. In the above code, case 1 is a word that has between 8 and 19 letters. The number of tries is defined by how many pictures the hangman drawing has. 
 For generating the words we used a library called [**wonderwords**](http://https://pypi.org/project/wonderwords/ "**wonderwords**"). From that library we imported the **RandomWord** class and when generating a word we call the **word** method.
 
-We also wrote a function **color()** for coloring the three different hangman motives. 
+`We also wrote a function "color()" for coloring the three different hangman motives.`
+
 ```python
 def color(num:int, picture:str):
     choice = num
@@ -144,15 +150,7 @@ import os
 
 Once the libraries were imported, the different functions that allowed the correct operation of the code were developed.
 
- `Function to clear the console screen.`
- 
- 
-```Python
-def clr():
-    return os.system('cls')
-```
-
-
+(...)
 ---
 ##  _Steps to install the game._ :open_file_folder::memo:
 
