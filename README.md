@@ -41,13 +41,10 @@ In the first place, the basic structure of the code was planned by means of a ps
 flowchart TD
     A[Start.] -->B(Print: Welcome to the hangman game.) 
     -->y(Ask the user if he/she is going to play alone or in pairs)
-    y -->e(Yes) --> C
+    y -->e(Yes) --> ex(Enable 2 player mode) --> E
     y --> r(No)
-    -->C(Show game levels.)
-    --> D("Level 1: Easy.
-    Level 2: Intermediate.
-    Level 3: Hard.")
-    --> E("Allow the user (or users) to choose a level.
+    
+    --> E("Ask the user (or users) to choose a level.
     ")
     E --> F(Level: Easy.) --> I(" • 11 attempts
     • 8-12 letters in the word.
@@ -62,13 +59,13 @@ flowchart TD
      •  Print a hangman design corresponding to the game difficulty.
      •  Print underscores representing the length of the random word.
     ") 
-    --> W("Allow the user to enter a letter.
+    --> W("Ask the user to enter a letter.
     (If the game is in pairs mode, the users will be taking turns.)
     ")
     --> R{Does the entered letter belong to the generated word?}
-    R -->n(No) --> q("• Add the word to the list.
+    R -->n(No) --> q("• Add letter to the list of failed letters.
     • Print part of the hangman design.
-    • Print the failed letters.
+    • Print failed letters.
     • Indicate a lost attempt.
     ") -->u{"Have the user (or users) lost all their attempts?
     "}
@@ -77,8 +74,8 @@ flowchart TD
     ") --> P
     u--> t(No) --> W
     
-    R -->Y(Yes) --> T(" • Add the word to the list.
-    • Print the updated underscores with the letter.
+    R -->Y(Yes) --> T("
+    • Print the updated underscores with the new letter.
     • Compare the list with the string of the generated word.
     • (If the game is in pairs mode, a point will be added to the scoreboard)
     ") -->U{Is the word completed?} 
