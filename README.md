@@ -130,8 +130,7 @@ For generating the words we used a library called [**wonderwords**](http://https
 
 ```python
 def color(num:int, picture:str):
-    choice = num
-    match choice:
+    match num:
         case 1:
             c = "\033[96m{}\033[0m".format(picture)
             return c
