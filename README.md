@@ -126,7 +126,7 @@ def level() -> str:
     return info
 ```
 In order to establish the difficulty level we tried different combinations of wordlenghts and number of tries. We end up with the easy level being a long word (case 1) with 11 tries and the hard level (case 3), a word of less than 5 letters and only 5 attempts. In the above code, case 1 is a word that has between 8 and 19 letters. The number of tries is defined by how many pictures the hangman drawing has. 
-For generating the words we used a library called [**wonderwords**](http://https://pypi.org/project/wonderwords/ "**wonderwords**"). From that library we imported the **RandomWord** class and when generating a word we call the **word** method.
+For generating the words we used a library called [**wonderwords**](https://pypi.org/project/wonderwords/). From that library we imported the **RandomWord** class and when generating a word we call the **word** method.
 
 `We also wrote a function "color()" for coloring the three different hangman motives.`
 
@@ -178,8 +178,16 @@ In this section we will explain the content and function of each file.
 
 * There are two options for the drawings. You can either download the **_'drawings.json'_** file or use the **_'text_to_json.py'_** script. The first file contains the drawings in an unreadable format but allows you to play the game immediately. The second option provides the drawings in their original design, but you need to run the 'text_to_json.py' script before executing 'hangman.py'. By running 'text_to_json.py', you will create the 'drawings.json' file, and everything will be ready to start playing.
 
+<p align="center"> 
+  <img src="https://i.postimg.cc/nhMwsh2D/Imagen1.jpg" alt="Sublime's custom image"/>
+  <img src="https://i.postimg.cc/6Q8Tqgy0/Imagen3.jpg"/>
+  <img src="https://i.postimg.cc/hv1tNq5S/Imagen2.jpg"/>
+</p>
+  
+* In **_requirements.txt_** you will find the libraries that you need to install in order to run the code, in this case the only library is wonderwords. 
+
 ---
-##  _Steps to install the game._ :open_file_folder:
+###  _Steps to install the game._ :open_file_folder:
 
 Get ready for game time! In order to play, you'll need to download the code. 
 
@@ -217,3 +225,4 @@ Once the folder is downloaded, you need to unzip it.
 
 * Python. (2023). _Download the latest python version for Windows._ https://www.python.org/downloads/
 * Wikipedia. (2023). _ANSI escape code._ https://en.wikipedia.org/wiki/ANSI_escape_code#cite_note-CruzGianone1997-31://
+* Python. (2023). _wonderwords 2.2.0._ https://pypi.org/project/wonderwords/
