@@ -11,17 +11,23 @@
 
 ---
 
-Welcome to this repository in which we would like to show you the development of the hangman game through Python programming code.
+Welcome to this repository where we will showcase the development of the Hangman game using Python programming code.
 
-First of all, we will present the index of what you can find in this repository.
+Firstly, we will provide an index of the contents you can find in this repository:
 
-**Index:**
-* Explanation of the development of the hangman game code.
-   * Pseudocode of the basic code structure.
-   * Each function explanation. 
-* Steps to install the game.
-* How to use the code.
-* References. 
+ _**Index:**_
+
+1. Explanation of the Hangman game code development.
+   
+      * Pseudocode outlining the basic code structure.
+      * Detailed explanation of each function.
+  
+2. Instructions for installing the game.
+3. Guide on how to use the code.
+4. References.
+
+
+We hope you find this repository informative and enjoy exploring the Hangman game development process.
 
 ---
 
@@ -86,6 +92,7 @@ flowchart TD
    
 ```
 ---
+
 Secondly, we will explain the operation of each function of the code.
 
 `The "clr()" function clears the screen using the os method ".system()".`
@@ -158,8 +165,16 @@ import os
 Once the libraries were imported, the different functions that allowed the correct operation of the code were developed.
 
 (...)
+
+
 ---
-##  _Steps to install the game._ :open_file_folder::memo:
+##  _Steps to install the game._ :open_file_folder:
+
+Get ready for game time! In order to play, you'll need to download the code. 
+
+Wondering how? Don't worry, we'll guide you through the process below. :memo:
+
+
 
 ---
 ##  _How to use the code._ :tada:
