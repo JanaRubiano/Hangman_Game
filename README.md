@@ -1,26 +1,26 @@
-# **Hangman Game...**
+# **The Hangman Game.**
 
-### _Done by:  The Bug Hunting Pythons._  :bug:🦗:bug:
+### _By:  The Bug Hunting Pythons._  :bug:🦗:bug:
 
 <p align="center"> 
   <img width="230" height="230" src="https://i.postimg.cc/TwsP2PbN/Whats-App-Image-2023-06-24-at-6-12-59-PM.jpg" alt="Sublime's custom image"/>
 </p>
 
 
-* **Team members:**  Jana Rubiano Hurtado, Samuel Villamizar & Ana Maria De Felipe Briñez.
+* **Team members:**  Jana Rubiano Hurtado & Ana Maria De Felipe Briñez.
 
 ---
 
 Welcome to this repository where we will showcase the development of the Hangman game using Python programming code.
 
-Firstly, we will provide an index of the contents you can find in this repository:
-
- _**Index:**_
+## _**Index:**_
 
 1. Explanation of the Hangman game code development.
    
-      * Pseudocode outlining the basic code structure.
+      * Pseudocode: outlining the basic code structure.
       * Detailed explanation of each function.
+      * Libraries.
+      * Files.
   
 2. Instructions for installing the game.
 3. Guide on how to use the code.
@@ -31,7 +31,7 @@ We hope you find this repository informative and enjoy exploring the Hangman gam
 
 ---
 
-##  _Explanation of the development of the hangman game code._  :woman_technologist::woman_technologist::man_technologist:
+#  _Explanation of the development of the hangman game code._  :woman_technologist::woman_technologist:
 
 In the first place, the basic structure of the code was planned by means of a pseudocode. 
 
@@ -90,7 +90,9 @@ flowchart TD
 ```
 ---
 
-Secondly, we will explain the operation of three functions that make the operation of the main code possible.
+## • Explanation of each function.
+
+Here we explain the operation of the three helper functions that make the main code work.
 
 `The "clr()" function clears the screen using the os method ".system()".`
 
@@ -143,10 +145,12 @@ def color(num:int, picture:str):
 ```
 For assigning a color to the text in the python console we used the [ANSI](https://en.wikipedia.org/wiki/ANSI_escape_code#cite_note-CruzGianone1997-31:// "ANSI") escape codes.
 
+## • Libraries.
 
-To enable the functionality of the game code, three main libraries were imported.
+To enable the functionality of the game code, three libraries were imported.
 
 1. **Time:** This library is used to make a delay when the user enters a repeated letter, it prints a message and resumes the game.
+   
    ```Python
     elif char in failed_letts: # when letter was already inputted
             print("Try a new letter!")
@@ -157,17 +161,22 @@ To enable the functionality of the game code, three main libraries were imported
     pip install wonderwords
   ```
   or downloading the requirements file and running the following command in a virtual environment: 
+  
   ```bash
     py -m pip install -r requirements.txt
   ```
   
 3. **Os:** This library allows access to the operating system, enabling interaction with various system functionalities.
 
+## • Files 
 
-Once the libraries were imported, the different functions that allowed the correct operation of the code were developed.
+In this section we will explain the content and function of each file.
 
-(...)
+* In the **_hangman.py_** file is the main program and is the file you run when playing the game.
+  
+* In the **_hangmanFunctions.py_** you will find the helper functions, which are imported to the hangman file.
 
+* There are two options for the drawings. You can either download the **_'drawings.json'_** file or use the **_'text_to_json.py'_** script. The first file contains the drawings in an unreadable format but allows you to play the game immediately. The second option provides the drawings in their original design, but you need to run the 'text_to_json.py' script before executing 'hangman.py'. By running 'text_to_json.py', you will create the 'drawings.json' file, and everything will be ready to start playing.
 
 ---
 ##  _Steps to install the game._ :open_file_folder:
