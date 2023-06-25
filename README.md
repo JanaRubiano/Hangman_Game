@@ -174,10 +174,28 @@ Get ready for game time! In order to play, you'll need to download the code.
 
 Wondering how? Don't worry, we'll guide you through the process below. :memo:
 
+1. To begin, please ensure that Python is installed on your device.
 
+If you are unsure about the installation process, you can follow the [link](https://www.python.org/downloads/) to install Python on your device.
+
+2. After successfully installing Python, you will need to download the files attached in this repository.
+
+<p align="center"> 
+  <img src="https://i.postimg.cc/13XqNvPd/Paso1.jpg" alt="Sublime's custom image"/>
+</p>
+
+To download the files, simply right-click on the file name, select **"Save link as..."**, and save it to a location that is convenient for you. We recommend saving all the downloaded files from this repository in the same folder for organizational purposes.
+
+**Recommendation:** When downloading the files, ensure that they are saved in the same format as the uploaded versions. If not, when prompted for **"filename,"** modify the file extension to the correct one, and for **"type,"** select "all files (.)"
+
+<p align="center"> 
+  <img src="https://i.postimg.cc/g0yJr7r8/Paso2.jpg" alt="Sublime's custom image"/>
+</p>
 
 ---
 ##  _How to use the code._ :tada:
 
 ---
 ##  _References._ :mag_right:
+
+* Python. (2023). Download the latest python version for Windows. https://www.python.org/downloads/ 
