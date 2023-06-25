@@ -84,7 +84,7 @@ flowchart TD
     ")
     --> P(Ask the user or users if they want to play again)
     P --> b(No) --> w[End]
-    P--> a(Yes) -->C
+    P--> a(Yes) -->E
     U --> i(No) -->W
    
 ```
