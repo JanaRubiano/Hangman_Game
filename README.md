@@ -90,7 +90,7 @@ flowchart TD
 ```
 ---
 
-Secondly, we will explain the operation of each function of the code.
+Secondly, we will explain the operation of three functions that make the operation of the main code possible.
 
 `The "clr()" function clears the screen using the os method ".system()".`
 
@@ -146,17 +146,23 @@ For assigning a color to the text in the python console we used the [ANSI](https
 
 To enable the functionality of the game code, three main libraries were imported.
 
-1. **Time:** This library is used to manage a timer in the code. It allows for the creation of a countdown that controls the user's playing time.
-2. **RandomWord:** This library can be installed using the command prompt (cmd) and enables the generation of random words with varying lengths and categories.
+1. **Time:** This library is used to make a delay when the user enters a repeated letter, it prints a message and resumes the game.
+   ```Python
+    elif char in failed_letts: # when letter was already inputted
+            print("Try a new letter!")
+            time.sleep(2)
+   ```
+2. **wonderwords:** This library, which  generates random words with varying lengths and categories, can be installed using the command prompt (cmd).
+  ```bash
+    pip install wonderwords
+  ```
+  or downloading the requirements file and running the following command in a virtual environment: 
+  ```bash
+    py -m pip install -r requirements.txt
+  ```
+  
 3. **Os:** This library allows access to the operating system, enabling interaction with various system functionalities.
 
- `libraries`
- 
-```Python
-from  wonderwords import RandomWord
-import time
-import os
-```
 
 Once the libraries were imported, the different functions that allowed the correct operation of the code were developed.
 
