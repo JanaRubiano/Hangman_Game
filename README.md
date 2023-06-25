@@ -186,12 +186,14 @@ If you are unsure about the installation process, you can follow the [link](http
   <img src="https://i.postimg.cc/13XqNvPd/Paso1.jpg" alt="Sublime's custom image"/>
 </p>
 
-To download the files, simply right-click on the file name, select **"Save link as..."**, and save it to a location that is convenient for you. We recommend saving all the downloaded files from this repository in the same folder for organizational purposes.
+To download the files, please follow these steps:
 
-**Recommendation:** When downloading the files, ensure that they are saved in the same format as the uploaded versions. If not, when prompted for **"filename,"** modify the file extension to the correct one, and for **"type,"** select "all files (.)"
+* Navigate to the upper right corner of the page.
+* Click on the "code" button.
+* Then, select the option "download ZIP" to initiate the download process.
 
 <p align="center"> 
-  <img src="https://i.postimg.cc/g0yJr7r8/Paso2.jpg" alt="Sublime's custom image"/>
+  <img src="https://i.postimg.cc/5NX2txwH/Paso2.jpg" alt="Sublime's custom image"/>
 </p>
 
 ---
