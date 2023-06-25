@@ -196,6 +196,10 @@ To download the files, please follow these steps:
   <img src="https://i.postimg.cc/5NX2txwH/Paso2.jpg" alt="Sublime's custom image"/>
 </p>
 
+Once the folder is downloaded, you need to unzip it.
+
+3. 
+
 ---
 ##  _How to use the code._ :tada:
 
