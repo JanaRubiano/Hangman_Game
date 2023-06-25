@@ -215,4 +215,5 @@ Once the folder is downloaded, you need to unzip it.
 ---
 ##  _References._ :mag_right:
 
-* Python. (2023). Download the latest python version for Windows. https://www.python.org/downloads/ 
+* Python. (2023). _Download the latest python version for Windows._ https://www.python.org/downloads/
+* Wikipedia. (2023). _ANSI escape code._ https://en.wikipedia.org/wiki/ANSI_escape_code#cite_note-CruzGianone1997-31://
