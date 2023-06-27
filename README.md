@@ -246,9 +246,12 @@ Once the folder is downloaded, you need to unzip it.
 
 3. After successfully downloading the required files, you have two options to proceed: open them in your code editor or directly access them in the Windows terminal using the "Windows + r" command.
 
+
 To ensure the code runs smoothly and to prevent any potential issues arising from variations in Python versions and installed packages on your device, we recommend following the steps outlined below:
 
-1.	Create a virtual environment in the folder where you downloaded the files. If you're unsure how to create the environment, you can follow [link](https://pypi.org/project/virtualenv/) as guide. 
+
+1.	Create a virtual environment in the folder where you downloaded the files. If you're unsure how to create the environment, you can follow [link](https://pypi.org/project/virtualenv/) as guide.
+   
 2.	Activate the virtual environment. On some Windows devices, you may need to use the following command to activate the virtual environment.
 
   ```bash
@@ -268,6 +271,11 @@ To ensure the code runs smoothly and to prevent any potential issues arising fro
 ---
 ##  _References._ :mag_right:
 
+* Brownlee, J. (2022). _Python Threading: The Complete Guide_. https://superfastpython.com/threading-in-python/ 
+* Manthanchauhan. (2021). _Python | Different ways to kill a Thread_. https://www.geeksforgeeks.org/python-different-ways-to-kill-a-thread/ 
 * Python. (2023). _Download the latest python version for Windows._ https://www.python.org/downloads/
-* Wikipedia. (2023). _ANSI escape code._ https://en.wikipedia.org/wiki/ANSI_escape_code#cite_note-CruzGianone1997-31://
 * Python. (2023). _wonderwords 2.2.0._ https://pypi.org/project/wonderwords/
+* Python. (2023). _Threading — Thread-based parallelism_. https://docs.python.org/3/library/threading.html
+* Python. (2023). _virtualenv_.  https://pypi.org/project/virtualenv/
+* Wikipedia. (2023). _ANSI escape code._ https://en.wikipedia.org/wiki/ANSI_escape_code#cite_note-CruzGianone1997-31://
+
