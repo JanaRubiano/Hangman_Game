@@ -23,7 +23,6 @@ Welcome to this repository where we will showcase the development of the Hangman
       * Files.
   
 2. Instructions for installing the game.
-3. Guide on how to use the code.
 4. References.
 
 
@@ -271,7 +270,7 @@ To ensure the code runs smoothly and to prevent any potential issues arising fro
 **Enjoy playing!** :tada:
 
 ---
-##  _References._ :mag_right:
+#  _References._ :mag_right:
 
 * Brownlee, J. (2022). _Python Threading: The Complete Guide_. https://superfastpython.com/threading-in-python/ 
 * Manthanchauhan. (2021). _Python | Different ways to kill a Thread_. https://www.geeksforgeeks.org/python-different-ways-to-kill-a-thread/ 
