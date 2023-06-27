@@ -175,7 +175,13 @@ To enable the functionality of the game code, five libraries were imported.
             print("Try a new letter!")
             time.sleep(2)
    ```
-2. **wonderwords:** This library, which  generates random words with varying lengths and categories, can be installed using the command prompt (cmd).
+   It is also used for the countdown.
+   ```Python
+   for sec in range(tm): # loop n times based on the argument
+     timer -= 1 # countdown
+     time.sleep(1)
+   ```
+3. **wonderwords:** This library, which  generates random words with varying lengths and categories, can be installed using the command prompt (cmd).
   ```bash
     pip install wonderwords
   ```
