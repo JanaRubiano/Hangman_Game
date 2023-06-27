@@ -221,7 +221,7 @@ In this section we will explain the content and function of each file.
 * In **_requirements.txt_** you will find the libraries that you need to install in order to run the code, in this case the only library is wonderwords. 
 
 ---
-###  _Steps to install the game._ :open_file_folder:
+#  _Steps to install the game._ :open_file_folder:
 
 Get ready for game time! In order to play, you'll need to download the code. 
 
