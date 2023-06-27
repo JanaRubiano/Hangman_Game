@@ -263,10 +263,7 @@ To ensure the code runs smoothly and to prevent any potential issues arising fro
 
 4. Finally, the code will start running, and you can interact with the game by entering characters as prompted.
 
-**Enjoy playing!**
-
----
-##  _How to use the code._ :tada:
+**Enjoy playing!** :tada:
 
 ---
 ##  _References._ :mag_right:
