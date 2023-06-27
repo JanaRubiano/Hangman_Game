@@ -152,7 +152,8 @@ This function prints text that is frequently used in the game.
 textDisplay(num, word, players)
 ```
 
-This game includes the **countdown(tm)** function and it allows the program to keep track of time. The argument it receives are seconds, which vary depending on the difficulty level.
+`This game includes the **countdown(tm)** function and it allows the program to keep track of time.`
+The argument it receives are seconds, which vary depending on the difficulty level.
 ```python
 for sec in range(tm): # loop n times based on the argument
   timer -= 1 # countdown
