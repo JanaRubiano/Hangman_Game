@@ -156,11 +156,12 @@ for sec in range(tm): # loop n times based on the argument
 ```
 In order to run both functions in the console at the same time this code uses threading. 
 ```python
+import threading
 def countdown(tm): 
     while True:
         global stop_threads # declare global stop flag
         global timer # declare global var for time in seconds
-        timer = tm
+        timer = tm...
 ```
 It is important to note that, because of threading this function is in the same file as the main function.
 ## • Libraries.
