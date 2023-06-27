@@ -39,7 +39,8 @@ In the first place, the basic structure of the code was planned by means of a ps
 
 ```mermaid
 flowchart TD
-    A[Start.] -->B(Print: Welcome to the hangman game.) 
+    A[Start.] 
+    -->B(Print: Welcome to the hangman game.) 
     -->y(Ask the user if he/she is going to play alone or in pairs)
     y -->e(Yes) --> ex(Enable 2 player mode) --> E
     y --> r(No)
@@ -59,34 +60,39 @@ flowchart TD
      •  Print a hangman design corresponding to the game difficulty.
      •  Print underscores representing the length of the random word.
     ") 
+    --> we(Initialize countdown)
     --> W("Ask the user to enter a letter.
     (If the game is in pairs mode, the users will be taking turns.)
     ")
-    --> R{Does the entered letter belong to the generated word?}
+    --> re{Time = 0}
+    re--> ji(Yes) 
+    ji -->sa(You ran out of time) -->S
+    re -->ju(No)
+    --> R{Entered letter belong to the generated word}
     R -->n(No) --> q("• Add letter to the list of failed letters.
     • Print part of the hangman design.
     • Print failed letters.
     • Indicate a lost attempt.
-    ") -->u{"Have the user (or users) lost all their attempts?
-    "}
-    u -->o(Yes) -->S("Game over. 
+    ") -->u{User still has attempts}
+    u -->o(No) -->jq(Stop countdown)
+    -->S("Game over. 
     Show the correct word. 
     ") --> P
-    u--> t(No) --> W
+    u--> t(Yes) --> W
     
     R -->Y(Yes) --> T("
     • Print the updated underscores with the new letter.
     • Compare the list with the string of the generated word.
     • (If the game is in pairs mode, a point will be added to the scoreboard)
-    ") -->U{Is the word completed?} 
-    U -->O(Yes) --> k("Print: You won
+    ") -->U{Word is completed} 
+    U -->O(Yes) -->wr(Stop countdown)
+    --> k("Print: You won
     (If the game is in pairs mode, the scores will be displayed)
     ")
     --> P(Ask the user or users if they want to play again)
     P --> b(No) --> w[End]
     P--> a(Yes) -->y
     U --> i(No) -->W
-   
 ```
 ---
 
@@ -250,19 +256,15 @@ Once the folder is downloaded, you need to unzip it.
 To ensure the code runs smoothly and to prevent any potential issues arising from variations in Python versions and installed packages on your device, we recommend following the steps outlined below:
 
 
-1.	Create a virtual environment in the folder where you downloaded the files. If you're unsure how to create the environment, you can follow [link](https://pypi.org/project/virtualenv/) as guide.
+1.	Create a virtual environment in the folder where you downloaded the files. If you're unsure how to create the environment, you can follow [link](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/) as guide.
    
-2.	Activate the virtual environment. On some Windows devices, you may need to use the following command to activate the virtual environment.
+2.	Activate the virtual environment. On some Windows devices, you may need to use the following command to proceed with the creation of the virtual environment.
 
   ```bash
     Set-ExecutionPolicy Unrestricted -Scope Process
   ```
 
-3.	Install the "wonderwords" library as instructed in the "libraries" section and once the installation is complete, you can start playing the game. In the terminal where the virtual environment is activated, run the following command:
-
-   ```bash
-    python hangman.py
-  ```
+3.	Install the "wonderwords" library as instructed in the "libraries" section and once the installation is complete, you can start playing the game. 
 
 4. Finally, the code will start running, and you can interact with the game by entering characters as prompted.
 
@@ -276,6 +278,6 @@ To ensure the code runs smoothly and to prevent any potential issues arising fro
 * Python. (2023). _Download the latest python version for Windows._ https://www.python.org/downloads/
 * Python. (2023). _wonderwords 2.2.0._ https://pypi.org/project/wonderwords/
 * Python. (2023). _Threading — Thread-based parallelism_. https://docs.python.org/3/library/threading.html
-* Python. (2023). _virtualenv_.  https://pypi.org/project/virtualenv/
+* Python. (2023). _virtualenv_. https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments
 * Wikipedia. (2023). _ANSI escape code._ https://en.wikipedia.org/wiki/ANSI_escape_code#cite_note-CruzGianone1997-31://
 
