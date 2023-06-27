@@ -244,7 +244,26 @@ To download the files, please follow these steps:
 
 Once the folder is downloaded, you need to unzip it.
 
-3. 
+3. After successfully downloading the required files, you have two options to proceed: open them in your code editor or directly access them in the Windows terminal using the "Windows + r" command.
+
+To ensure the code runs smoothly and to prevent any potential issues arising from variations in Python versions and installed packages on your device, we recommend following the steps outlined below:
+
+1.	Create a virtual environment in the folder where you downloaded the files. If you're unsure how to create the environment, you can follow [link](https://pypi.org/project/virtualenv/) as guide. 
+2.	Activate the virtual environment. On some Windows devices, you may need to use the following command to activate the virtual environment.
+
+  ```bash
+    Set-ExecutionPolicy Unrestricted -Scope Process
+  ```
+
+3.	Install the "wonderwords" library as instructed in the "libraries" section and once the installation is complete, you can start playing the game. In the terminal where the virtual environment is activated, run the following command:
+
+   ```bash
+    python hangman.py
+  ```
+
+4. Finally, the code will start running, and you can interact with the game by entering characters as prompted.
+
+**Enjoy playing!**
 
 ---
 ##  _How to use the code._ :tada:
