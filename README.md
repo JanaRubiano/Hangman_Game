@@ -117,15 +117,15 @@ def level() -> str:
         clr()
     match choice:
         case 1:
-            info = [r.word(word_min_length=8, word_max_length=19), 1]
+            info = [r.word(word_min_length=8, word_max_length=19), 1, 91]
         case 2:
-            info = [r.word(word_min_length=5, word_max_length=8), 2]
+            info = [r.word(word_min_length=5, word_max_length=8), 2, 61]
         case 3:
-            info = [r.word(word_max_length=5), 3]
+            info = [r.word(word_max_length=5), 3, 41]
 
     return info
 ```
-In order to establish the difficulty level we tried different combinations of wordlenghts and number of tries. We end up with the easy level being a long word (case 1) with 11 tries and the hard level (case 3), a word of less than 5 letters and only 5 attempts. In the above code, case 1 is a word that has between 8 and 14 letters. The number of tries is defined by how many pictures the hangman drawing has. 
+In order to establish the difficulty level we tried different combinations of wordlenghts, number of tries and time. We end up with the easy level being a long word (case 1) with 11 tries and the hard level (case 3), a word of less than 6 letters and only 5 attempts. In the above code, case 1 is a word that has between 8 and 14 letters, 11 tries and 91 seconds. The number of tries is defined by how many pictures the hangman drawing has. 
 For generating the words we used a library called [**wonderwords**](https://pypi.org/project/wonderwords/). From that library we imported the **RandomWord** class and when generating a word we call the **word** method.
 
 `We also wrote a function "color()" for coloring the three different hangman motives.`
