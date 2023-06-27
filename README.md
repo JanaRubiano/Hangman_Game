@@ -147,12 +147,22 @@ This function prints text that is frequently used in the game.
 textDisplay(num, word, players)
 ```
 
-This game includes the countdown(tm) function and it allows the program to keep track of time. The argument it receives are seconds, which vary depending on the difficulty level. 
+This game includes the countdown(tm) function and it allows the program to keep track of time. The argument it receives are seconds, which vary depending on the difficulty level.
 ```python
-
+for sec in range(tm): # loop n times based on the argument
+  timer -= 1 # countdown
+  time.sleep(1)
+  print("\t\t\t{}:{}".format(timer//60, timer%60) if timer%60...
 ```
-
-
+In order to run both functions in the console at the same time this code uses threading. 
+```python
+def countdown(tm): 
+    while True:
+        global stop_threads # declare global stop flag
+        global timer # declare global var for time in seconds
+        timer = tm
+```
+It is important to note that, because of threading this function is in the same file as the main function.
 ## • Libraries.
 
 To enable the functionality of the game code, three libraries were imported.
