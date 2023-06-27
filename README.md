@@ -83,7 +83,7 @@ flowchart TD
     • Print the updated underscores with the new letter.
     • Compare the list with the string of the generated word.
     • (If the game is in pairs mode, a point will be added to the scoreboard)
-    ") -->U{Word is completed} 
+    ") -->U{Word is completed and time != 0} 
     U -->O(Yes) -->wr(Stop countdown)
     --> k("Print: You won
     (If the game is in pairs mode, the scores will be displayed)
