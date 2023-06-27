@@ -92,7 +92,7 @@ flowchart TD
 
 ## • Explanation of each function.
 
-Here we explain the operation of the three helper functions that make the main code work.
+Here we explain the operation of the helper functions that make the main code work.
 
 `The "clr()" function clears the screen using the os method ".system()".`
 
@@ -134,16 +134,24 @@ For generating the words we used a library called [**wonderwords**](https://pypi
 def color(num:int, picture:str):
     match num:
         case 1:
-            c = "\033[96m{}\033[0m".format(picture)
-            return c
+            return "\033[96m{}\033[0m".format(picture)
         case 2:
-            c = "\033[93m{}\033[0m".format(picture)
-            return c
+            return "\033[93m{}\033[0m".format(picture)
         case 3:
-            c = "\033[35m{}\033[0m".format(picture)
-            return c
+            return "\033[35m{}\033[0m".format(picture)
 ```
 For assigning a color to the text in the python console we used the [ANSI](https://en.wikipedia.org/wiki/ANSI_escape_code#cite_note-CruzGianone1997-31:// "ANSI") escape codes.
+
+This function prints text that is frequently used in the game.
+```python
+textDisplay(num, word, players)
+```
+
+This game includes the countdown(tm) function and it allows the program to keep track of time. The argument it receives are seconds, which vary depending on the difficulty level. 
+```python
+
+```
+
 
 ## • Libraries.
 
