@@ -147,7 +147,7 @@ This function prints text that is frequently used in the game.
 textDisplay(num, word, players)
 ```
 
-This game includes the countdown(tm) function and it allows the program to keep track of time. The argument it receives are seconds, which vary depending on the difficulty level.
+This game includes the **countdown(tm)** function and it allows the program to keep track of time. The argument it receives are seconds, which vary depending on the difficulty level.
 ```python
 for sec in range(tm): # loop n times based on the argument
   timer -= 1 # countdown
@@ -166,7 +166,7 @@ def countdown(tm):
 It is important to note that, because of threading this function is in the same file as the main function.
 ## • Libraries.
 
-To enable the functionality of the game code, three libraries were imported.
+To enable the functionality of the game code, five libraries were imported.
 
 1. **Time:** This library is used to make a delay when the user enters a repeated letter, it prints a message and resumes the game.
    
@@ -186,12 +186,16 @@ To enable the functionality of the game code, three libraries were imported.
   ```
   
 3. **Os:** This library allows access to the operating system, enabling interaction with various system functionalities.
+  
+4. **json:** This is used for opening the drawings, which are stored in a json file.
+   
+5. **threading:** The threading library allows to have control over multiple threads **_(one thread = a single sequential flow of control within a program)_** running and performing different tasks at the same time in the same program.
 
 ## • Files 
 
 In this section we will explain the content and function of each file.
 
-* In the **_hangman.py_** file is the main program and is the file you run when playing the game.
+* In the **_hangman.py_** file is the main program and the countdown function, and is the file you run when playing the game.
   
 * In the **_hangmanFunctions.py_** you will find the helper functions, which are imported to the hangman file.
 
