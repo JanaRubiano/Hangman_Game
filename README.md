@@ -48,12 +48,15 @@ flowchart TD
     ")
     E --> F(Level: Easy.) --> I(" • 11 attempts
     • 8-12 letters in the word.
+    • Time: 90 secs
     ") -->L
     E --> G(Level: Intermediate.) --> J(" •  10 attempts
     • 5-8 letters in the word.
+    • Time: 60 secs
     ") -->L
     E --> H(Level: Hard.) --> K(" •  5 attempts
     •  5 > letters in the word.
+    • Time: 40 secs
     ") 
     --> L(" • Generate a random word that corresponds to the game difficulty.
      •  Print a hangman design corresponding to the game difficulty.
