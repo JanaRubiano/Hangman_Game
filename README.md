@@ -11,7 +11,7 @@
 
 ---
 
-Welcome to this repository where we will showcase the development of the Hangman game using Python programming.
+Welcome to this repository where we will showcase the development of the Hangman game using Python.
 
 ## _**Index:**_
 
