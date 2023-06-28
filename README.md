@@ -1,6 +1,6 @@
 # **The Hangman Game**
 
-### _By:  The Bug Hunting Pythons._  :bug:🦗:bug:
+### _By:  The Bug Hunting Pythons_  :bug:🦗:bug:
 
 <p align="center"> 
   <img width="230" height="230" src="https://i.postimg.cc/TwsP2PbN/Whats-App-Image-2023-06-24-at-6-12-59-PM.jpg" alt="Sublime's custom image"/>
