@@ -56,7 +56,7 @@ flowchart TD
     ") -->L
     E --> H(Level: Hard.) --> K(" •  5 attempts
     •  5 > letters in the word.
-    • Time: 40 secs
+    • Time: 30 secs
     ") 
     --> L(" • Generate a random word that corresponds to the game difficulty.
      •  Print a hangman design corresponding to the game difficulty.
@@ -125,13 +125,11 @@ def level() -> str:
         clr()
     match choice:
         case 1:
-            info = [r.word(word_min_length=8, word_max_length=19), 1, 91]
+            return [r.word(word_min_length=8, word_max_length=14), 1, 91]
         case 2:
-            info = [r.word(word_min_length=5, word_max_length=8), 2, 61]
+           return [r.word(word_min_length=5, word_max_length=8), 2, 61]
         case 3:
-            info = [r.word(word_max_length=5), 3, 41]
-
-    return info
+            return [r.word(word_max_length=5), 3, 31]
 ```
 In order to establish the difficulty level we tried different combinations of wordlenghts, number of tries and time. We end up with the easy level being a long word (case 1) with 11 tries and the hard level (case 3), a word of less than 6 letters and only 5 attempts. In the above code, case 1 is a word that has between 8 and 14 letters, 11 tries and 91 seconds. The number of tries is defined by how many pictures the hangman drawing has. 
 For generating the words we used a library called [**wonderwords**](https://pypi.org/project/wonderwords/). From that library we imported the **RandomWord** class and when generating a word we call the **word** method.
@@ -155,23 +153,25 @@ This function prints text that is frequently used in the game.
 textDisplay(num, word, players)
 ```
 
-`This game includes the "countdown(tm)" function and it allows the program to keep track of time.`
+`This game includes the "countdown(tm, event)" function and it allows the program to keep track of time.`
 
-The argument it receives are seconds, which vary depending on the difficulty level.
+One of the arguments it receives are seconds, which vary depending on the difficulty level.
 ```python
-for sec in range(tm): # loop n times based on the argument
+for sec in range(tm, event): # loop n times based on the argument
   timer -= 1 # countdown
   time.sleep(1)
   print("\t\t\t{}:{}".format(timer//60, timer%60) if timer%60...
 ```
 In order to run both functions in the console at the same time this code uses threading. 
 ```python
-import threading
-def countdown(tm): 
-    while True:
-        global stop_threads # declare global stop flag
-        global timer # declare global var for time in seconds
-        timer = tm...
+def countdown(tm:int, event:Event): 
+    global timer # declare global var for time in seconds
+    timer = tm
+    for sec in range(tm):
+      ...
+      if event.is_set(): # if event is set, kill the thread
+            break
+    print("\n\033[31mYou ran
 ```
 It is important to note that, because of threading this function is in the same file as the main function.
 ## • Libraries.
@@ -195,7 +195,7 @@ To enable the functionality of the game code, five libraries were imported.
   ```bash
     pip install wonderwords
   ```
-  or downloading the requirements file and running the following command in a virtual environment: 
+  or downloading the requirements file and running the following command in a virtual environment (more about this in  _Steps to install the game_): 
   
   ```bash
     py -m pip install -r requirements.txt
