@@ -284,4 +284,5 @@ To ensure the code runs smoothly and to prevent any potential issues arising fro
 * Python. (2023). _Threading — Thread-based parallelism_. https://docs.python.org/3/library/threading.html
 * Python. (2023). _virtualenv_. https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments
 * Wikipedia. (2023). _ANSI escape code._ https://en.wikipedia.org/wiki/ANSI_escape_code#cite_note-CruzGianone1997-31://
+* Brownlee, J. (2022). _How To Stop a Thread in Python_. https://superfastpython.com/stop-a-thread-in-python/
 
