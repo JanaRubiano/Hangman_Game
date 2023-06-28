@@ -155,7 +155,7 @@ textDisplay(num, word, players)
 
 `This game includes the "countdown(tm, event)" function and it allows the program to keep track of time.`
 
-One of the arguments it receives are seconds, which vary depending on the difficulty level.
+One of the arguments it receives are seconds, which vary according to the difficulty level.
 ```python
 for sec in range(tm, event): # loop n times based on the argument
   timer -= 1 # countdown
